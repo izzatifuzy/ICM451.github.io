@@ -4,11 +4,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {
-  font-family: Arial;
-  font-size: 17px;
-  padding: 8px;
-}
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+        }
+  .rounded-frame {
+            width: 150px; /* Adjust the width as needed */
+            height: 150px; /* Adjust the height as needed */
+            border-radius: 150%;
+            overflow: hidden;
+            border: 2px solid #fffbfb; /* Adjust the border color and width as needed */
+        }
+
+        .rounded-frame img {
+            width: 100%;
+            height: 100;
+            object-fit: cover;
+        }
 
 * {
   box-sizing: border-box;
@@ -114,10 +131,9 @@ span.price {
 </head>
 <body>
 
-<div class="bgimg w3-display-container w3-text-black">
-  <div class="w3-display-topmiddle w3-jumbo">
-    <p>logo</p>
-  </div>
+<div class="rounded-frame">
+        <img src="logo ICM451.jpg" alt="Your Image">
+    </div>
   <div class="w3-display-topleft w3-container w3-xlarge"></div>
     <p><button onclick="document.getElementById('back').style.display='block'" class="w3-button w3-black">back</button></p>
     <p><button 
