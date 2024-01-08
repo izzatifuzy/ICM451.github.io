@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoJarCookies.co - Sign Up and Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #C19A6B;
+            color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .rounded-frame {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #fff;
+        }
+
+        .rounded-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffdbac;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-container button {
+            width: 100%;
+            background-color: #C19A6B;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-switch {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-switch a {
+            color: #C19A6B;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+         <div class="rounded-frame">
+            <img src="logo ICM451.jpg" alt="ChocoJarCookies Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="payment.html">Payment</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container" id="signUpForm">
+            <h2>Sign Up</h2>
+            <form action="your_signup_endpoint" method="post">
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="signup-username" required>
+
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="signup-email" required>
+
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <div class="form-switch">
+                <p>Already have an account? <a onclick="toggleForm('login')">Log In</a></p>
+            </div>
+        </div>
+
+        <div class="form-container" id="loginForm" style="display: none;">
+            <h2>Log In</h2>
+            <form action="your_login_endpoint" method="post">
+                <label for="login-username">Username or Email:</label>
+                <input type="text" id="login-username" name="login-username" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+
+                <button type="submit">Log In</button>
+            </form>
+
+            <div class="form-switch">
+                <p>Don't have an account? <a onclick="toggleForm('signUp')">Sign Up</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleForm(formId) {
+            const signUpForm = document.getElementById('signUpForm');
+            const loginForm = document.getElementById('loginForm');
+
+            if (formId === 'signUp') {
+                signUpForm.style.display = 'block';
+                loginForm.style.display = 'none';
+            } else if (formId === 'login') {
+                signUpForm.style.display = 'none';
+                loginForm.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
 
