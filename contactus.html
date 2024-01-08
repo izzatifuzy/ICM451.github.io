@@ -2,94 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Dessert Delights</title>
+    <title>Your Page Title</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4ece0;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            padding: 0;
+            background-color: #f8f8f8;
         }
 
-        .container {
+        header {
             display: flex;
             justify-content: space-between;
-            width: 80%;
-            margin: 0 auto;
-            background-color: #f8f2e3;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            padding: 20px;
+            background-color: #C19A6B;
+            color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .rounded-frame {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
             overflow: hidden;
+            border: 2px solid #fff;
         }
 
-        .logo-section {
-            flex: 1;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .dessert-logo {
-            width: 90%;
-            border-radius: 8px 0 0 8px;
-        }
-
-        .form-section {
-            flex: 1;
-            padding: 40px;
-            box-sizing: border-box;
-        }
-
-        h1 {
-            color: #7d5e4c;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            color: #7d5e4c;
-            font-weight: bold;
-        }
-
-        input, textarea {
+        .rounded-frame img {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-            border: 1px solid #c8b4a2;
-            border-radius: 4px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
             font-size: 14px;
-            color: #544136;
+            transition: color 0.3s ease;
         }
 
-        textarea {
-            resize: vertical;
+        nav a:hover {
+            color: #ffdbac;
         }
 
-        button {
-            background-color: #b09077;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
+        main {
+            padding: 20px;
         }
 
-        button:hover {
-            background-color: #8d715f;
-        }
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f8f2e3;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.logo-section {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.dessert-logo {
+    width: 90%;
+    border-radius: 8px 0 0 8px;
+}
+
+.form-section {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #7d5e4c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #7d5e4c;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #c8b4a2;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #544136;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #b09077;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8d715f;
+}
+
     </style>
 </head>
 <body>
+    <header>
+        <div class="rounded-frame">
+            <img src="logo ICM451.jpg" alt="Your Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="payment.html">Payment</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="container">
+    <main>
+<div class="container">
         <div class="logo-section">
             <img class="dessert-logo" src="logo ICM451.jpg" alt="Dessert Logo">
         </div>
@@ -114,6 +179,7 @@
             </form>
         </div>
     </div>
+    </main>
 
     <script>
         document.getElementById('dessertContactForm').addEventListener('submit', function (event) {
@@ -122,6 +188,5 @@
             event.preventDefault();
         });
     </script>
-
 </body>
 </html>
