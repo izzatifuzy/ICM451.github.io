@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Chocojar.xsl"?>
+	
+	<product>
+		<details>
+			<productname>King Milky Coklat</productname>
+			<productprice>15.00</productprice>
+			<producttype>Chocojar</producttype>
+		</details>
+		
+		<details>
+			<productname>Japanese Matcha</productname>
+			<productprice>17.00</productprice>
+			<producttype>Chocojar</producttype>
+		</details>
+		
+		<details>
+			<productname>White Hershey</productname>
+			<productprice>15.00</productprice>
+			<producttype>Chocojar</producttype>
+		</details>
+		
+		<details>
+			<productname>Salted Caramel</productname>
+			<productprice>15.00</productprice>
+			<producttype>Chocojar</producttype>
+		</details>
+		
+		<details>
+			<productname>King Milky Coklat</productname>
+			<productprice>16.00</productprice>
+			<producttype>Chocojar</producttype>
+		</details>
+		
+		<details>
+			<productname>White Creme</productname>
+			<productprice>16.00</productprice>
+			<producttype>Chocojar</producttype>
+		</details>
+		
+		<details>
+			<productname>Green Pistachio</productname>
+			<productprice>23.90</productprice>
+			<producttype>Chocojar</producttype>
+		</details>
+		
+		<details>
+			<productname>Hazel Bueno</productname>
+			<productprice>19.90</productprice>
+			<producttype>Chocojar</producttype>
+		</details>
+		
+		<details>
+			<productname>Kuqis Berbury</productname>
+			<productprice>23.00</productprice>
+			<producttype>Kukis</producttype>
+		</details>
+		
+		<details>
+			<productname>Black Cookie</productname>
+			<productprice>23.00</productprice>
+			<producttype>Kukis</producttype>
+		</details>
+		
+		<details>
+			<productname>Snowy Red Velvet</productname>
+			<productprice>25.00</productprice>
+			<producttype>Kukis</producttype>
+		</details>
+		
+		<details>
+			<productname>Matcha Latte</productname>
+			<productprice>25.00</productprice>
+			<producttype>Kukis</producttype>
+		</details>
+		
+		<details>
+			<productname>Almond and Premium Chocolate Choco Rice</productname>
+			<productprice>17.00</productprice>
+			<producttype>Choco Rice</producttype>
+		</details>
+		
+		<details>
+			<productname>Almond and Premium Chocolate Choco Ball</productname>
+			<productprice>17.00</productprice>
+			<producttype>Choco Ball</producttype>
+		</details>
+		
+		<details>
+			<productname>Almond and Premium Chocolate Choco Mini Crunch</productname>
+			<productprice>17.00</productprice>
+			<producttype>Choco Mini Crunch</producttype>
+		</details>
+		
+		<details>
+			<productname>Unicorn Strawberry</productname>
+			<productprice>08.80</productprice>
+			<producttype>Choco Mini Crunch</producttype>
+		</details>
+		
+		<details>
+			<productname>Almond and Premium Chocolate Choco Mini Dorayaki</productname>
+			<productprice>17.00</productprice>
+			<producttype>Choco Mini Dorayaki</producttype>
+		</details>
+	</product>
