@@ -97,7 +97,7 @@
         }
 
         .product-column {
-            width: 31%; /* Adjust the width as needed */
+            width: 31%;
             margin-bottom: 20px;
         }
 
@@ -140,8 +140,28 @@
             }
 
             .product-card img {
-                width: 80%; /* Adjust the width as needed */
+                width: 80%;
             }
+        }
+
+        /* Centered link styling */
+        .link-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .link_product {
+            display: inline-block;
+            padding: 10px;
+            background-color: #C19A6B;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .link_product:hover {
+            background-color: #ffdbac;
         }
     </style>
 </head>
@@ -236,9 +256,14 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Centered link -->
+            <div class="link-container">
+                <a class="link_product" href="Chocojar.xml">
+                    CHOCOJAR COOKIES PRODUCT
+                </a>
+            </div>
         </div>
-        <a class="link_product" href="Chocojar.xml" style="text-align: center">
-            CHOCOJAR COOKIES PRODUCT</a>
     </main>
 </body>
 
